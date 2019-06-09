@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sample.rekognition.mediatr:
+    image: ${DOCKER_REGISTRY-}samplerekognitionmediatr
+    build:
+      context: .
+      dockerfile: src/Sample.Rekognition.MediatR/Dockerfile
